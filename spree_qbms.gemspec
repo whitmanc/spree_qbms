@@ -3,8 +3,8 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_qbms'
   s.version     = '1.0.0'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'QuickBooks Merchant Service on Spree'
+  s.description = 'QuickBooks Merchant Services gateway for Spree'
   s.required_ruby_version = '>= 1.8.7'
 
   s.author            = 'Chris Whitman '
