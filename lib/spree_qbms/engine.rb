@@ -1,5 +1,7 @@
 module SpreeGateway
   class Engine < Rails::Engine
+    require 'spree/core'
+    isolate_namespace Spree
     engine_name 'spree_qbms'
 
     config.autoload_paths += %W(#{config.root}/lib)
@@ -13,5 +15,4 @@ module SpreeGateway
         app.config.spree.payment_methods << Spree::Gateway::Qbms
     end
   end
-
 end
