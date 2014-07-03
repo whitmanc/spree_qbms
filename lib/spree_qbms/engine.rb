@@ -1,6 +1,6 @@
 module SpreeGateway
   class Engine < Rails::Engine
-    engine_name 'spree_gateway'
+    engine_name 'spree_qbms'
 
     config.autoload_paths += %W(#{config.root}/lib)
 
