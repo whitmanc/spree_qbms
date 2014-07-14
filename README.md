@@ -1,21 +1,28 @@
 SpreeQbms
 =========
 
-Introduction goes here.
+Spree extension to accept payments via Intuit quickbooks merchant services (QBMS). 
+https://merchantcenter.intuit.com/msc/portal/login?offering=qbms
+
+Follow this guide to setup a qbms app:
+https://support.bigcommerce.com/questions/1061/How+do+I+set+up+QuickBooks+Merchant+Services%3F
 
 
 Example
 =======
 
-Example goes here.
+<p>Add "gem 'spree_qbms'" to gemfile and bundle install. <br/> 
 
-Testing
--------
+Goto Spree Admin Panel -> Configuration -> Payment Methods -> New Payment Method.<br/>
 
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
+Select Spree::Gateway::Qbms as the provider and add a name.<br/>
 
-    $ bundle
-    $ bundle exec rake test app
-    $ bundle exec rspec spec
+In the update screen provide the following information:
+<ul>
+<li>App Login</li>
+<li>App ID</li>
+<li>Ticket</li>
+</ul>
 
-Copyright (c) 2012 [name of extension creator], released under the New BSD License
+</p>
+Copyright (c) 2014 [name of extension creator], released under the New BSD License

@@ -2,6 +2,7 @@ module Spree
   class Gateway::Qbms < Gateway
     preference :login, :string
     preference :ticket, :string
+    preference :id, :string
 
     def provider_class
       ActiveMerchant::Billing::QbmsGateway
